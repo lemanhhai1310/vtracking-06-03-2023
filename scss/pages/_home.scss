@@ -1,0 +1,156 @@
+.home{
+  &__slider{
+    .uk-slidenav{
+      color: #{$primary-color};
+    }
+    &__dots{
+      &__dc{
+        border-color: #{$primary-color};
+        background-color: #{$primary-color};
+      }
+      >*{
+        >*{
+          border-color: #{$primary-color};
+          &:hover{
+            @extend .home__slider__dots__dc;
+          }
+        }
+        &.uk-active{
+          >*{
+            @extend .home__slider__dots__dc;
+          }
+        }
+      }
+    }
+    &__title{
+      //font-size: 33px;
+      font-family: $font-FS-Magistral-Medium;
+      font-weight: 500;
+      color: #172B47;
+      @include fluidx(33px,23px,font-size);
+    }
+    &__desc{
+      color: #172B47;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    &__btn{
+      box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 10%);
+      transition: all .5s ease;
+      background: #{$primary-color} !important;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: inherit;
+    }
+    &__list{
+      >li{
+        >a{
+          color: #172B47;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  &__nav{
+    z-index: 10;
+    &__scrollspy{
+
+    }
+    &__icon{
+      width: 100%;
+      padding-top: 100%;
+      @include media-breakpoint-up('m'){
+        padding-top: inherit;
+        height: 64px;
+        max-width: 64px;
+      }
+      border-radius: 4px;
+      display: flex;
+      background-color: #656581;
+      background-repeat: no-repeat;
+      background-position: center;
+      &.icon1{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='white' class='bi bi-bookmark-star-fill' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z'/%3E%3C/svg%3E");
+      }
+      &.icon2{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='white' class='bi bi-geo-alt-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/svg%3E");
+      }
+      &.icon3{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='white' class='bi bi-compass-fill' viewBox='0 0 16 16'%3E%3Cpath d='M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.503 7.503 0 0 1 5.538 7.24zm-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z'/%3E%3C/svg%3E");
+      }
+      &.icon4{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='white' class='bi bi-webcam-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.644 11.094a.5.5 0 0 1 .356-.15h2a.5.5 0 0 1 .356.15c.175.177.39.347.603.496a7.166 7.166 0 0 0 .752.456l.01.006h.003A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.002-.001.01-.006a3.517 3.517 0 0 0 .214-.116 7.5 7.5 0 0 0 .539-.34c.214-.15.428-.319.603-.496ZM7 6.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z'/%3E%3Cpath d='M2 3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H2Zm6 1.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM12.5 7a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Z'/%3E%3C/svg%3E");
+      }
+      &.icon5{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='white' class='bi bi-thermometer-sun' viewBox='0 0 16 16'%3E%3Cpath d='M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z'/%3E%3Cpath d='M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z'/%3E%3C/svg%3E");
+      }
+      &.icon6{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='white' class='bi bi-camera-video-fill' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z'/%3E%3C/svg%3E");
+      }
+      .uk-active>*> &{
+        background-color: #{$primary-color} !important;
+      }
+    }
+    .uk-navbar-nav{
+      gap: 3px;
+      @include media-breakpoint-up('m'){
+        gap: 20px;
+      }
+      >li{
+        >a{
+          text-transform: inherit;
+          flex-direction: column;
+          min-height: 64px;
+          @include media-breakpoint-up('m'){
+            min-height: 142px;
+          }
+          position: relative;
+          span{
+            color: #172B47;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'Sarabun', sans-serif;
+          }
+        }
+        &.uk-active{
+          >a{
+            &:after{
+              content: " ";
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              opacity: 0;
+              @include media-breakpoint-up('m'){
+                opacity: 1;
+              }
+              margin: 0 auto;
+              bottom: 0px;
+              border: 10px solid transparent;
+              border-bottom-color: #{$primary-color};
+            }
+            span{
+              color: #{$primary-color};
+            }
+          }
+        }
+      }
+    }
+  }
+  &__product1{
+    &__title{
+      color: #172B47;
+      font-size: 20px;
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 700;
+    }
+    &__list{
+      >li{
+        font-size: 16px;
+        color: #172B47;
+      }
+    }
+  }
+  &__product2{
+
+  }
+}

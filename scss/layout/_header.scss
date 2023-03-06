@@ -1,0 +1,82 @@
+.header{
+  &.uk-active{
+    background: #fff !important;
+    &.uk-sticky-below{
+      box-shadow: 4px 4px 16px rgb(0 0 0 / 8%);
+    }
+  }
+  &__top{
+    border-bottom: 1px solid #ccc !important;
+    color: #657987;
+    background: #fff;
+    &__heightItem{
+      min-height: 30px;
+    }
+    .uk-navbar-nav{
+      >li{
+        >a{
+          @extend .header__top__heightItem;
+          text-transform: inherit;
+          font-family: 'Sarabun', sans-serif;
+          color: #657987;
+          span{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  &__bottom{
+    background: #ffffff;
+    @include media-breakpoint-up('m'){
+      background: transparent;
+    }
+    &__heightItem{
+      min-height: 70px;
+      @include media-breakpoint-up('m'){
+        min-height: 83px;
+      }
+    }
+    .uk-navbar-item,
+    .uk-navbar-toggle{
+      @extend .header__bottom__heightItem;
+    }
+    .uk-navbar-dropdown{
+      .uk-nav{
+        >li{
+          >a{
+            font-family: 'Sarabun', sans-serif;
+            color: #172B47;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .uk-navbar-nav{
+      >li{
+        >a{
+          @extend .header__bottom__heightItem;
+          text-transform: inherit;
+          font-family: 'Sarabun', sans-serif;
+          color: #172B47;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+    &__btnLogin{
+      text-transform: inherit;
+      background: linear-gradient(270deg, #{$primary-color} 0%, #002295 60.42%, #0036d2 100%) !important;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 44px;
+    }
+    &__logo{
+      img{
+        //height: 60px;
+        @include fluidx(60px,50px,height);
+      }
+    }
+  }
+}
