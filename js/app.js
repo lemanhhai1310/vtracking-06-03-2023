@@ -8,26 +8,7 @@ const xx = document.querySelectorAll.bind(document);
 
 const app = {
     render: function () {
-        const home__nav = x('.home__nav');
-        const header = x('.header');
-        const home__nav__scrollspy = x('.home__nav__scrollspy');
 
-        //Height
-        const h_header = header ? header.offsetHeight : 0;
-        const h_home__nav = home__nav ? home__nav.offsetHeight : 0;
-
-        if (home__nav){
-            console.log('Height Header',h_header);
-            UIkit.sticky(home__nav, {
-                'offset': h_header,
-            });
-        }
-
-        if (home__nav__scrollspy){
-            UIkit.scrollspyNav(home__nav__scrollspy, {
-                'offset': h_header + h_home__nav,
-            });
-        }
     },
     start: function () {
         this.render();
