@@ -217,11 +217,99 @@
       color: #172B47;
       font-size: 18px;
       font-weight: 600;
-      line-height: (30/18);
+      line-height: (17.6/16);
     }
     &__desc{
       font-size: 16px;
       color: #172B47;
+    }
+  }
+  &__khachhang{
+    &__box{
+      min-height: 240px;
+      background-repeat: no-repeat;
+      padding-left: 170px;
+      &__txt1{
+        color: #EA0D34;
+        font-size: 36px;
+        font-weight: 700;
+        font-family: 'Sarabun', sans-serif;
+        line-height: (39/36);
+      }
+      &__txt2{
+        color: #172B47;
+        font-size: 16px;
+      }
+    }
+    &__img{
+      border: 1px solid #EEEEEE;
+      border-radius: 3px;
+      padding: 10px 0;
+      text-align: center;
+      &:hover{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+  &__banggia{
+    &__card{
+      border-radius: 12px;
+      overflow: hidden;
+      border-width: 5px 1px 1px 1px;
+      border-color: #d2d2d2;
+      border-style: solid solid solid solid;
+      &:hover{
+        border-color: #EA0D34;
+      }
+      &__item{
+        &:nth-child(n+2){
+          border-top: 2px solid #e5e5e5;
+          padding-top: 15px;
+          margin-top: 15px;
+        }
+      }
+      &__title{
+        font-family: 'Sarabun', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: rgb(23, 43, 71);
+      }
+      &__txt1{
+        color: #172B47;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      &__txt2{
+        color: #172B47;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Sarabun', sans-serif;
+        strong{
+          color: #EA0D34;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+      &__list{
+        >li{
+          color: #172B47;
+          font-family: 'Sarabun', sans-serif;
+          font-size: 16px;
+          background: url(images/n-arrow-1.png) no-repeat left 3px;
+          padding-left: 25px;
+          strong{
+            font-weight: 600;
+            display: block;
+          }
+        }
+      }
+      &__btn{
+        background: linear-gradient(270deg, #BA1318 0%, #E61A45 60.42%, #EE0000 100%) !important;
+        text-transform: inherit;
+        font-size: 16px;
+        font-weight: 700;
+      }
     }
   }
 }

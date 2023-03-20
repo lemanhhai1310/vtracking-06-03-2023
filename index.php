@@ -108,297 +108,17 @@
     </div>
 </div>
 <!--/slider-->
+
+
 <div class="uk-section">
     <div class="uk-container">
         <h2 class="uk-h2 home__slider__title uk-text-center">CÁC SẢN PHẨM VÀ DỊCH VỤ CỦA TLOGISTICS</h2>
-        <div class="home__nav uk-margin-medium-top">
-            <ul class="uk-child-width-expand" uk-tab uk-switcher="connect: .my-class">
-                <?php
-                $data = array(
-                    array(
-                        'icon' => 'icon1',
-                        'txt' => 'Phù Hiệu & Giấy liên vận',
-                        'href' => 'product1',
-                    ),
-                    array(
-                        'icon' => 'icon2',
-                        'txt' => 'Định vị xe máy và ô tô',
-                        'href' => 'product2',
-                    ),
-                    array(
-                        'icon' => 'icon3',
-                        'txt' => 'Định vị hợp chuẩn',
-                        'href' => 'product3',
-                    ),
-                    array(
-                        'icon' => 'icon4',
-                        'txt' => 'Camera nghị định 10',
-                        'href' => 'product4',
-                    ),
-                    array(
-                        'icon' => 'icon5',
-                        'txt' => 'CB nhiên liệu & Nhiệt độ',
-                        'href' => 'product5',
-                    ),
-                    array(
-                        'icon' => 'icon6',
-                        'txt' => 'Camera An Ninh',
-                        'href' => 'product6',
-                    ),
-                );
-                foreach ($data as $k=>$v): ?>
-                    <li class="<?= ($k == 0)?'uk-active':'' ?>">
-                        <a href="#<?= $v['href'] ?>" class="uk-flex-column">
-                            <div class="home__nav__icon <?= $v['icon'] ?>"></div>
-                            <span class="line-clamp-1 item__15 uk-visible@m"><?= $v['txt'] ?></span>
-                        </a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <ul class="uk-switcher my-class">
-            <li>
-                <!--#product1-->
-                <div id="product1" class="uk-section">
-                    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                        <div>
-                            <div uk-slider>
+    </div>
 
-                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-                                    <ul class="uk-slider-items uk-child-width">
-                                        <?php for ($i=1;$i<=4;$i++): ?>
-                                            <li>
-                                                <img src="images/n-tab-1.png" alt="">
-                                            </li>
-                                        <?php endfor; ?>
-                                    </ul>
-
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-                                </div>
-
-                                <ul class="uk-slider-nav uk-dotnav home__slider__dots uk-flex-center uk-margin"></ul>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="uk-h4 home__product1__title">Phù Hiệu & Giấy liên vận</h4>
-                            <ul class="uk-list uk-list-square home__product1__list">
-                                <li>Vị trí hiện thời trên bản đồ số và trạng thái hoạt động tạm thời</li>
-                                <li>Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin đặt xe, ...</li>
-                                <li>Hiển thị các cảnh cáo nóng như SOS, quá tốc độ, vi phạm thời gian lái xe liên tục, vi phạm thời gian lái xe trong ngày</li>
-                                <li>Hình ảnh theo một khoảng thời gian</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--/#product1-->
-            </li>
-            <li>
-                <!--#product2-->
-                <div id="product2" class="uk-section">
-                    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                        <div>
-                            <div uk-slider>
-
-                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-                                    <ul class="uk-slider-items uk-child-width">
-                                        <?php for ($i=1;$i<=4;$i++): ?>
-                                            <li>
-                                                <img src="images/n-tab-1.png" alt="">
-                                            </li>
-                                        <?php endfor; ?>
-                                    </ul>
-
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-                                </div>
-
-                                <ul class="uk-slider-nav uk-dotnav home__slider__dots uk-flex-center uk-margin"></ul>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="uk-h4 home__product1__title">Định vị xe máy và ô tô</h4>
-                            <ul class="uk-list uk-list-square home__product1__list">
-                                <li>Vị trí hiện thời trên bản đồ số và trạng thái hoạt động tạm thời</li>
-                                <li>Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin đặt xe, ...</li>
-                                <li>Hiển thị các cảnh cáo nóng như SOS, quá tốc độ, vi phạm thời gian lái xe liên tục, vi phạm thời gian lái xe trong ngày</li>
-                                <li>Hình ảnh theo một khoảng thời gian</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--/#product2-->
-            </li>
-            <li>
-                <!--#product3-->
-                <div id="product3" class="uk-section">
-                    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                        <div>
-                            <div uk-slider>
-
-                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-                                    <ul class="uk-slider-items uk-child-width">
-                                        <?php for ($i=1;$i<=4;$i++): ?>
-                                            <li>
-                                                <img src="images/n-tab-1.png" alt="">
-                                            </li>
-                                        <?php endfor; ?>
-                                    </ul>
-
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-                                </div>
-
-                                <ul class="uk-slider-nav uk-dotnav home__slider__dots uk-flex-center uk-margin"></ul>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="uk-h4 home__product1__title">Định vị hợp chuẩn</h4>
-                            <ul class="uk-list uk-list-square home__product1__list">
-                                <li>Vị trí hiện thời trên bản đồ số và trạng thái hoạt động tạm thời</li>
-                                <li>Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin đặt xe, ...</li>
-                                <li>Hiển thị các cảnh cáo nóng như SOS, quá tốc độ, vi phạm thời gian lái xe liên tục, vi phạm thời gian lái xe trong ngày</li>
-                                <li>Hình ảnh theo một khoảng thời gian</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--/#product3-->
-            </li>
-            <li>
-                <!--#product4-->
-                <div id="product4" class="uk-section">
-                    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                        <div>
-                            <div uk-slider>
-
-                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-                                    <ul class="uk-slider-items uk-child-width">
-                                        <?php for ($i=1;$i<=4;$i++): ?>
-                                            <li>
-                                                <img src="images/n-tab-1.png" alt="">
-                                            </li>
-                                        <?php endfor; ?>
-                                    </ul>
-
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-                                </div>
-
-                                <ul class="uk-slider-nav uk-dotnav home__slider__dots uk-flex-center uk-margin"></ul>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="uk-h4 home__product1__title">Camera nghị định 10</h4>
-                            <ul class="uk-list uk-list-square home__product1__list">
-                                <li>Vị trí hiện thời trên bản đồ số và trạng thái hoạt động tạm thời</li>
-                                <li>Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin đặt xe, ...</li>
-                                <li>Hiển thị các cảnh cáo nóng như SOS, quá tốc độ, vi phạm thời gian lái xe liên tục, vi phạm thời gian lái xe trong ngày</li>
-                                <li>Hình ảnh theo một khoảng thời gian</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--/#product4-->
-            </li>
-            <li>
-                <!--#product5-->
-                <div id="product5" class="uk-section">
-                    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                        <div>
-                            <div uk-slider>
-
-                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-                                    <ul class="uk-slider-items uk-child-width">
-                                        <?php for ($i=1;$i<=4;$i++): ?>
-                                            <li>
-                                                <img src="images/n-tab-1.png" alt="">
-                                            </li>
-                                        <?php endfor; ?>
-                                    </ul>
-
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-                                </div>
-
-                                <ul class="uk-slider-nav uk-dotnav home__slider__dots uk-flex-center uk-margin"></ul>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="uk-h4 home__product1__title">CB nhiên liệu & Nhiệt độ</h4>
-                            <ul class="uk-list uk-list-square home__product1__list">
-                                <li>Vị trí hiện thời trên bản đồ số và trạng thái hoạt động tạm thời</li>
-                                <li>Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin đặt xe, ...</li>
-                                <li>Hiển thị các cảnh cáo nóng như SOS, quá tốc độ, vi phạm thời gian lái xe liên tục, vi phạm thời gian lái xe trong ngày</li>
-                                <li>Hình ảnh theo một khoảng thời gian</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--/#product5-->
-            </li>
-            <li>
-                <!--#product6-->
-                <div id="product6" class="uk-section">
-                    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                        <div>
-                            <div uk-slider>
-
-                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-                                    <ul class="uk-slider-items uk-child-width">
-                                        <?php for ($i=1;$i<=4;$i++): ?>
-                                            <li>
-                                                <img src="images/n-tab-1.png" alt="">
-                                            </li>
-                                        <?php endfor; ?>
-                                    </ul>
-
-                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-                                </div>
-
-                                <ul class="uk-slider-nav uk-dotnav home__slider__dots uk-flex-center uk-margin"></ul>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="uk-h4 home__product1__title">Camera An Ninh</h4>
-                            <ul class="uk-list uk-list-square home__product1__list">
-                                <li>Vị trí hiện thời trên bản đồ số và trạng thái hoạt động tạm thời</li>
-                                <li>Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin đặt xe, ...</li>
-                                <li>Hiển thị các cảnh cáo nóng như SOS, quá tốc độ, vi phạm thời gian lái xe liên tục, vi phạm thời gian lái xe trong ngày</li>
-                                <li>Hình ảnh theo một khoảng thời gian</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--/#product6-->
-            </li>
-        </ul>
-
-
-        <!--home__nav-->
-        <nav hidden="" class="uk-navbar-container uk-margin-medium home__nav uk-navbar" uk-navbar>
-            <div class="uk-navbar-left uk-width">
-
-                <ul class="uk-navbar-nav home__nav__scrollspy uk-width uk-child-width-expand uk-flex-nowrap" uk-scrollspy-nav="closest: li; scroll: true">
+    <div class="uk-margin-medium-top uk-background-muted">
+        <div class="uk-container">
+            <div class="home__nav">
+                <ul class="uk-child-width-expand uk-margin-remove-bottom" uk-tab uk-switcher="connect: .my-class">
                     <?php
                     $data = array(
                         array(
@@ -433,58 +153,70 @@
                         ),
                     );
                     foreach ($data as $k=>$v): ?>
-                    <li class="<?= ($k == 0)?'uk-active':'' ?>">
-                        <a href="#<?= $v['href'] ?>">
-                            <div class="home__nav__icon <?= $v['icon'] ?>"></div>
-                            <span class="line-clamp-1 item__15 uk-visible@m"><?= $v['txt'] ?></span>
-                        </a>
-                    </li>
+                        <li class="<?= ($k == 0)?'uk-active':'' ?>">
+                            <a href="#<?= $v['href'] ?>" class="uk-flex-column">
+                                <div class="home__nav__icon <?= $v['icon'] ?>"></div>
+                                <span class="line-clamp-1 item__15 uk-visible@m"><?= $v['txt'] ?></span>
+                            </a>
+                        </li>
                     <?php endforeach; ?>
                 </ul>
-
             </div>
-        </nav>
-        <!--/home__nav-->
+        </div>
+    </div>
+
+    <ul class="uk-switcher my-class">
+        <li>
+            <?php require "template-parts/layouts/product1.php"; ?>
+        </li>
+        <li>
+            <?php require "template-parts/layouts/product2.php"; ?>
+        </li>
+        <li>
+            <?php require "template-parts/layouts/product3.php"; ?>
+        </li>
+        <li>
+            <?php require "template-parts/layouts/product4.php"; ?>
+        </li>
+        <li>
+            <?php require "template-parts/layouts/product5.php"; ?>
+        </li>
+        <li>
+            <?php require "template-parts/layouts/product6.php"; ?>
+        </li>
+    </ul>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-        <!---->
-        <div class="uk-section">
-            <h2 class="uk-h2 home__slider__title uk-text-center uk-text-uppercase">Lí do Chọn chúng tôi</h2>
-            <div class="uk-grid uk-child-width-1-2@m uk-margin-medium uk-flex-middle" uk-grid>
-                <div>
-                    <img src="images/n-img-2.png" alt="">
-                </div>
-                <div class="uk-flex-first@m">
-                    <div class="uk-child-width uk-grid" uk-grid>
-                        <?php
-                        $data = array(
-                            array(
-                                'img' => 'images/mohinh/n-l-ico5.png',
-                                'title' => 'Hệ thống máy chủ dữ liệu',
-                                'desc' => 'Lưu trữ cơ sở dữ liệu của hệ thống. Các dữ liệu hành trình, hình ảnh, video của phương tiện được lưu trữ và xử lý tại đây',
-                            ),
-                            array(
-                                'img' => 'images/mohinh/n-l-ico6.png',
-                                'title' => 'Hệ thống máy chủ ứng dụng',
-                                'desc' => 'Tiếp nhận và xử lý các yêu cầu từ người dùng, phân tích, xử lý nghiệp vụ và trả kết quả cho người dùng',
-                            ),
-                            array(
-                                'img' => 'images/mohinh/n-l-ico7.png',
-                                'title' => 'Thuê bao giám sát hành trình',
-                                'desc' => 'Là các thiết bị giám sát hành trình, camera hành trình được gắn lên phương tiện của người dùng',
-                            ),
-                        );
-                        foreach ($data as $k=>$v): ?>
+<!--Lí do Chọn chúng tôi-->
+<div class="uk-section uk-background-muted">
+    <div class="uk-container">
+        <h2 class="uk-h2 home__slider__title uk-text-center uk-text-uppercase">Lí do Chọn chúng tôi</h2>
+        <div class="uk-grid uk-child-width-1-2@m uk-margin-medium uk-flex-middle" uk-grid>
+            <div>
+                <img src="images/n-img-2.png" alt="">
+            </div>
+            <div class="uk-flex-first@m">
+                <div class="uk-child-width uk-grid" uk-grid>
+                    <?php
+                    $data = array(
+                        array(
+                            'img' => 'images/mohinh/n-l-ico5.png',
+                            'title' => 'Hệ thống máy chủ dữ liệu',
+                            'desc' => 'Lưu trữ cơ sở dữ liệu của hệ thống. Các dữ liệu hành trình, hình ảnh, video của phương tiện được lưu trữ và xử lý tại đây',
+                        ),
+                        array(
+                            'img' => 'images/mohinh/n-l-ico6.png',
+                            'title' => 'Hệ thống máy chủ ứng dụng',
+                            'desc' => 'Tiếp nhận và xử lý các yêu cầu từ người dùng, phân tích, xử lý nghiệp vụ và trả kết quả cho người dùng',
+                        ),
+                        array(
+                            'img' => 'images/mohinh/n-l-ico7.png',
+                            'title' => 'Thuê bao giám sát hành trình',
+                            'desc' => 'Là các thiết bị giám sát hành trình, camera hành trình được gắn lên phương tiện của người dùng',
+                        ),
+                    );
+                    foreach ($data as $k=>$v): ?>
                         <div>
                             <div class="uk-grid" uk-grid>
                                 <div class="uk-width-auto">
@@ -496,12 +228,56 @@
                                 </div>
                             </div>
                         </div>
-                        <?php endforeach; ?>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
-        <!--/-->
     </div>
 </div>
+<!--/Lí do Chọn chúng tôi-->
+
+<!--/KHÁCH HÀNG CỦA V-TRACKING-->
+<div class="uk-section">
+    <div class="uk-container">
+        <h2 class="uk-h2 home__slider__title uk-text-center uk-text-uppercase">KHÁCH HÀNG CỦA V-TRACKING</h2>
+        <div class="uk-child-width-1-3@m uk-flex-center uk-margin-medium-top" uk-grid>
+            <div>
+                <div class="home__khachhang__box" data-src="images/n-bg-4.png" uk-img>
+                    <div class="home__khachhang__box__txt1">26000</div>
+                    <div class="home__khachhang__box__txt2">Tổng số khách hàng đang sử dụng dịch vụ</div>
+                </div>
+            </div>
+            <div>
+                <div class="home__khachhang__box" data-src="images/n-bg-5.png" uk-img>
+                    <div class="home__khachhang__box__txt1">68000</div>
+                    <div class="home__khachhang__box__txt2">Tổng số thuê bao đã kích hoạt dịch vụ</div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-center home__khachhang__box__txt2">
+            <div>Dịch vụ V-Tracking chính thức được cung cấp từ năm 2012.</div>
+            <div>Một số khách hàng tiêu biểu như sau:</div>
+        </div>
+        <div class="uk-child-width-expand@m" uk-grid>
+            <?php
+            $data = array(
+                'images/n-client-1.png',
+                'images/n-client-2.png',
+                'images/n-client-3.png',
+                'images/n-client-4.png',
+                'images/n-client-5.png',
+                'images/n-client-6.png',
+            );
+            foreach ($data as $k=>$v): ?>
+            <div>
+                <div class="home__khachhang__img">
+                    <img src="<?= $v ?>" alt="">
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div>
+<!--/KHÁCH HÀNG CỦA V-TRACKING-->
+
 <?php require "template-parts/layouts/footer.php"; ?>

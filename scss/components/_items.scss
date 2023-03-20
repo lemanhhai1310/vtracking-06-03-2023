@@ -1,4 +1,10 @@
 .item{
+  $x:27;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:20;
   &__#{$x}{
     &:nth-child(n+2){
@@ -27,6 +33,17 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+    }
+  }
+
+  $max:72;
+  $min:30;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
     }
   }
 }

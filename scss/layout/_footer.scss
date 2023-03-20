@@ -1,0 +1,38 @@
+.footer{
+  &__top{
+    &__title{
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: 'Sarabun', sans-serif;
+      font-size: 16px;
+      color: rgb(23, 43, 71);
+    }
+    &__txt{
+      color: rgb(23, 43, 71);
+      font-size: 16px;
+    }
+    &__list{
+      >li{
+        display: flex;
+        align-items: center;
+        color: rgb(23, 43, 71);
+        font-size: 16px;
+        img{
+          margin-right: 8px;
+        }
+        &.location{
+
+        }
+        &.phone{
+
+        }
+        &.email{
+
+        }
+      }
+    }
+  }
+  &__bottom{
+    background: linear-gradient(270deg, #BA1318 0%, #E61A45 60.42%, #EE0000 100%) !important;
+  }
+}
